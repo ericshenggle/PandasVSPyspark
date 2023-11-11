@@ -1,3 +1,4 @@
 .idea
 .vscode
 Task 1/Datasets/*.json
+!Task 1/Datasets/
