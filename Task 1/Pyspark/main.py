@@ -31,7 +31,7 @@ joined_df = reviews_grouped.join(metadata_df, "asin")
 top_15_products = joined_df.orderBy(F.desc("num_reviews")).limit(15)
 
 # 输出结果
-output_file_path = 'output.txt'
+output_file_path = 'output_pyspark.txt'
 with open(output_file_path, "w") as output_file:
     # 写入表头
     field_widths = [15, 20, 15, 20, 20]
