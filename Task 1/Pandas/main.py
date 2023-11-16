@@ -28,6 +28,7 @@ metadata_df = metadata_df[['asin', 'brand']]
 log_time("Metadata data transformed")
 
 joined_df = pd.merge(reviews_grouped, metadata_df, on='asin')
+joined_df = joined_df.drop_duplicates(subset=['asin', 'reviewTime'])
 log_time("DataFrames joined")
 
 # Step 3: 选择和排序数据

@@ -26,6 +26,7 @@ metadata_df = metadata_df.select("asin", "brand")
 
 # 连接reviews_df和metadata_df
 joined_df = reviews_grouped.join(metadata_df, "asin")
+joined_df = joined_df.dropDuplicates(["asin", "reviewTime"])
 
 # 选择和排序数据
 top_15_products = joined_df.orderBy(F.desc("num_reviews")).limit(15)
