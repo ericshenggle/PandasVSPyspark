@@ -4,9 +4,7 @@ Pyspark VS Pandas
 
 ### Enviroment Requirement
 
-- conda env create -f py38.yaml
-- Spark 3.4
-- Java 8
+- conda create -n CS5239 python=3.8 pandas scikit-learn jupyter pyspark=3.4 spark-nlp openjdk=8
 - Scala 2.12
 - Maven 3.5
 
