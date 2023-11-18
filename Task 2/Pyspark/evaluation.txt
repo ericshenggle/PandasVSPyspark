@@ -1,0 +1,28 @@
+LR:
+
+Accuracy = 83.81%
+Precision = 82.42%
+Recall = 86.03%
+F1 Score = 84.19%
+
+NB:
+
+Accuracy = 81.99%
+Precision = 83.88%
+Recall = 79.28%
+F1 Score = 81.52%
+
+DT:
+
+Accuracy = 69.48%
+Precision = 64.53%
+Recall = 86.78%
+F1 Score = 74.02%
+
+RF:
+
+Accuracy = 68.54%
+Precision = 65.66%
+Recall = 77.99%
+F1 Score = 71.30%
+

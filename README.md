@@ -35,3 +35,34 @@ A big data analysis pipeline based on utilizing language modeling and text class
 movie.csv (52.7MB)
 
 The dataset contains a total of 39,273 data items, with each review accompanied by a sentiment label indicating the reviewer’s sentiment polarity towards the movie.
+
+# Experiment
+
+## Profiling
+
+#### FlameGraph:
+	sudo perf record -e cpu-clock -F 99 -p `pidof python`
+
+
+## Observability Tools
+
+### Pre-processed
+
+#### Overview:
+	htop -d 50 -p `pidof ipython`
+	
+#### System call:
+	sudo strace -o output.txt -c -p `pidof ipython`
+
+### System-wided
+
+#### cpu:
+    mpstat -P ALL 30
+
+#### Memory:
+    free -m
+
+    vmstat -Sm 10
+
+#### IO:
+    iostat 10
