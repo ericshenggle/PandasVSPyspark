@@ -41,7 +41,7 @@ The dataset contains a total of 39,273 data items, with each review accompanied 
 ## Profiling
 
 #### FlameGraph:
-	sudo perf record -e cpu-clock -F 99 -p `pidof python`
+    sudo perf record -e cpu-clock -F 99 -g -p `process_pid`
 
 
 ## Observability Tools
@@ -49,10 +49,10 @@ The dataset contains a total of 39,273 data items, with each review accompanied 
 ### Pre-processed
 
 #### Overview:
-	htop -d 50 -p `pidof ipython`
+	htop -d 50 -p `process_pid`
 	
 #### System call:
-	sudo strace -o output.txt -c -p `pidof ipython`
+	sudo strace -o output.txt -c -p `process_pid`
 
 ### System-wided
 
