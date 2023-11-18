@@ -1,4 +1,6 @@
 .idea
 .vscode
-Task 1/Datasets/*.json
-!Task 1/Datasets/
+Task 1/Large/Datasets/*.json
+Task 1/Small/Datasets/*.json
+!Task 1/Large/Datasets
+!Task 1/Small/Datasets

@@ -1,13 +1,14 @@
 import pandas as pd
 import datetime
 
+start = datetime.datetime.now()
 
 def log_time(task_name):
-    print(f"{task_name} completed at {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"{task_name} completed at {datetime.datetime.now() - start}")
 
 
 # Step 1: 读取数据
-log_time("Start")
+# log_time("Start")
 input_file_path = '../Datasets/Patio_Lawn_and_Garden.json'
 metadata_file_path = '../Datasets/meta_Patio_Lawn_and_Garden.json'
 
@@ -22,10 +23,10 @@ reviews_grouped = reviews_df.groupby(['asin', 'reviewTime']).agg(
     num_reviews=pd.NamedAgg(column='overall', aggfunc='count'),
     avg_rating=pd.NamedAgg(column='overall', aggfunc='mean')
 ).reset_index()
+
 log_time("Reviews data grouped and aggregated")
 
 metadata_df = metadata_df[['asin', 'brand']]
-log_time("Metadata data transformed")
 
 joined_df = pd.merge(reviews_grouped, metadata_df, on='asin')
 joined_df = joined_df.drop_duplicates(subset=['asin', 'reviewTime'])
@@ -50,6 +51,5 @@ with open(output_file_path, "w") as output_file:
                                 if isinstance(field, (int, float)) else field.rjust(width)
                                 for field, width in zip(_data, field_widths))
         output_file.write(output_line + "\n")
-    log_time("Output file written")
 
 log_time("Process completed")
