@@ -1,0 +1,16 @@
+   <product ID>	    <num of reviews>	  <review time>	       <avg ratings>	<product brand name>
+     B011EXBCMQ	                  78	    09 23, 2016	              1.8462	       Miracle Sound
+     B00Y0HYHD0	                  62	    10 27, 2016	              4.9355	           Gruv Gear
+     B00FNEB9XU	                  58	    10 27, 2016	              4.9655	           Gruv Gear
+     B014F1UKI6	                  58	    01 25, 2018	              4.8966	              Kootek
+     B01G6PGQXC	                  58	     08 9, 2016	                 5.0	      Guitar Triller
+     B000VSM4MS	                  52	     01 3, 2014	              3.6923	            Crescent
+     B000VSM4MS	                  52	     01 7, 2014	              3.7692	            Crescent
+     B000VSM4MS	                  40	    12 30, 2013	                 3.2	            Crescent
+     B000XI6O2W	                  40	    01 20, 2016	                 4.6	     Singing Machine
+     B004XNK7AI	                  38	     03 1, 2016	              4.7895	               Snark
+     B005ZH5V3Y	                  38	    05 21, 2013	              4.8947	          Doma Music
+     B00FNEB9XU	                  38	    10 28, 2016	                 5.0	           Gruv Gear
+     B00JER27MO	                  38	    12 11, 2016	              4.7895	       Monster Grips
+     B000VSM4MS	                  36	     01 8, 2014	              3.7778	            Crescent
+     B000XI6O2W	                  36	    01 12, 2015	              4.4444	     Singing Machine
