@@ -1,0 +1,35 @@
+LR:
+
+Accuracy = 89.1%
+F1 Score = 89.0%
+
+Confusiton Matrix:
+ [[3584  500]
+ [ 367 3494]]
+
+NB:
+
+Accuracy = 84.5%
+F1 Score = 83.6%
+
+ Confusiton Matrix:
+ [[3578  506]
+ [ 723 3138]]
+
+DT:
+
+Accuracy = 70.7%
+F1 Score = 70.1%
+
+ Confusiton Matrix:
+ [[2889 1195]
+ [1130 2731]]
+
+RF:
+
+Accuracy = 84.3%
+F1 Score = 84.1%
+
+ Confusiton Matrix:
+ [[3390  694]
+ [ 555 3306]]
