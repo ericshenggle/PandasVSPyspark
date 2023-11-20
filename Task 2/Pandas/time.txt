@@ -1,0 +1,10 @@
+Load: 0:00:00.347735
+Preprocess: 0:07:45.090801
+LR Train: 0:00:01.565405
+LR Evaluate: 0:00:00.029796
+NB Train: 0:00:00.024686
+NB Evaluate: 0:00:00.041199
+DT Train: 0:00:32.133679
+DT Evaluate: 0:00:00.078959
+RF Train: 0:01:14.013849
+RF Evaluate: 0:00:00.701328
